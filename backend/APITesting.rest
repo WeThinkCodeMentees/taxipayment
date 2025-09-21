@@ -1,0 +1,12 @@
+#Register a new user
+POST http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+  "email": "apple@mzansiservices.com",
+  "password": "Test123!",
+  "name": "Apple Munch",
+  "phone": "0721234568",
+  "location": "Soweto, Johannesburg",
+  "isServiceProvider": true
+}
