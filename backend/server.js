@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require("cors");
 const authRoutes = require("./routes/authRoutes");
+const getServiceRouter = require("./routes/serviceRoutes");
 
 
 
@@ -12,6 +13,7 @@ app.use(express.json());
 
 // Routes
 app.use("/auth", authRoutes);
+app.use("/", getServiceRouter());
 
 
 
